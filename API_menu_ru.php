@@ -10,7 +10,7 @@
      * @author     Willou <augeardw@gmail.com>
      * @copyright  2019 Willou
      * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
-     * @version    1.0.0-beta
+     * @version    1.0.1-beta
      */
  
     //Extract source code and save menu code
@@ -134,24 +134,7 @@
 
     //Encode json content
     $contenu_json = json_encode($all_menu, JSON_PRETTY_PRINT);
-
-    //Create and write in json file
-    $file_name = "menu_ru.json";
-    $file = fopen($file_name, 'w+');
-    fwrite($file, $contenu_json);
-    fclose($file);
+    header('Content-type: text/javascript');
+    echo $contenu_json;
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
