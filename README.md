@@ -59,12 +59,12 @@ This is a simple API done in PHP. <br>Goal is to retrieve all menus from Bordeau
 
 ## Example of usage
 
+You can find the result in www.waugeard.com/API_menu_ru.php.
 ```php+HTML
 <?php
-	include("API_menu_ru.php");
-	$contents = file_get_contents("menu_ru.json"); 
-	$obj = json_decode($contents, true);
-	var_dump( $obj["date"]["25 juin 2019"]["Déjeuner"]["CHAINE TRADITIONNELLE"]);
+	$contents = file_get_contents("https://www.waugeard.com/API_menu_ru.php"); 
+        $obj = json_decode($contents, true);
+        echo '<pre>' . var_export($obj["date"]["25 mars 2019"]["Déjeuner"]["CHAINE TRADITIONNELLE"], true) . '</pre>';
 ?>
 ```
 
