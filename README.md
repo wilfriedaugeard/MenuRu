@@ -13,7 +13,7 @@ This is a simple API done in PHP. <br>Goal is to retrieve all menus from Bordeau
 ### Clone
 Clone this repository to your local machine 
 ```shell
-$ git clone https://github.com/wilfriedaugeard/Reversi_AI/
+$ git clone https://github.com/wilfriedaugeard/MenuRu/
 ```
 
 ## Example of JSON file render
