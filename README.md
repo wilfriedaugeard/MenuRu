@@ -9,6 +9,9 @@
 
 This is a simple API done in PHP. <br>Goal is to retrieve all menus from Bordeaux University restaurant from the source code of their website in order to put them in a JSON file.
 
+## Prerequisites
+- php 5.6.40
+
 ## Installation
 ### Clone
 Clone this repository to your local machine 
